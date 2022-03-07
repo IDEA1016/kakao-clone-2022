@@ -5,10 +5,43 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/point.css";
+@import "components/icon-row.css";
+@import "components/alternative-screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   font-family: "Open sans", sans-serif;
+  color: #2e363e;
+  padding-top: 30px;
+  height: 1000vh;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.mini-dot {
+  display: flex;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  position: absolute;
+  right: -5px;
 }
